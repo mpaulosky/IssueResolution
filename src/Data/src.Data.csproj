@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+	</PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.78" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="2.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Build Include="dbo\Stored Procedures\spInventory_GetAll.sql" />
+    <Build Include="dbo\Stored Procedures\spInventory_Insert.sql" />
+    <Build Include="dbo\Stored Procedures\spProduct_GetAll.sql" />
+    <Build Include="dbo\Stored Procedures\spProduct_GetById.sql" />
+    <Build Include="dbo\Stored Procedures\spSaleDetail_Insert.sql" />
+    <Build Include="dbo\Stored Procedures\spSale_Insert.sql" />
+    <Build Include="dbo\Stored Procedures\spSale_Lookup.sql" />
+    <Build Include="dbo\Stored Procedures\spSale_SaleReport.sql" />
+    <Build Include="dbo\Stored Procedures\spUserLookup.sql" />
+    <Build Include="dbo\Stored Procedures\spUser_Insert.sql" />
+    <Build Include="dbo\Tables\Inventory.sql" />
+    <Build Include="dbo\Tables\Product.sql" />
+    <Build Include="dbo\Tables\Sale.sql" />
+    <Build Include="dbo\Tables\SaleDetail.sql" />
+    <Build Include="dbo\Tables\User.sql" />
+  </ItemGroup>
+
+</Project>
